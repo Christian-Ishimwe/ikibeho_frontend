@@ -1,43 +1,69 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 import "./HomeIntro.css"; // Import CSS file for styling
 
 const HomeIntro = () => {
   return (
     <div className="home_intro">
       <div className="home_content">
-        <Fade bottom>
-          <h2>Empowering Teen Mothers</h2>
-        </Fade>
-        <Fade bottom delay={200}>
-          <p className="intro_text">
-            At <strong>Ikibeho Digital Foundation</strong>, we are dedicated to
-            transforming the lives of teen mothers in Rwanda. We understand the
-            unique challenges that young mothers face, from managing their
-            education and personal development to securing a stable future for
-            themselves and their children.
-          </p>
-        </Fade>
-        <Fade bottom delay={400}>
-          <p className="intro_text">
-            <strong>Our mission</strong> is to provide comprehensive support
-            that empowers these young women through photography, videography,
-            and tourism to overcome obstacles and thrive.
-          </p>
-        </Fade>
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Empowering Teen Mothers
+        </motion.h2>
+
+        <motion.p
+          className="intro_text"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          At <strong>Ikibeho Digital Foundation</strong>, we are dedicated to
+          transforming the lives of teen mothers in Rwanda. We understand the
+          unique challenges that young mothers face, from managing their
+          education and personal development to securing a stable future for
+          themselves and their children.
+        </motion.p>
+
+        <motion.p
+          className="intro_text"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <strong>Our mission</strong> is to provide comprehensive support that
+          empowers these young women through photography, videography, and
+          tourism to overcome obstacles and thrive.
+        </motion.p>
+
         <div className="cta_buttons">
-          <Fade bottom delay={600}>
-            <button>Contact Us</button>
-          </Fade>
-          <Fade bottom delay={800}>
-            <button>Donate</button>
-          </Fade>
+          <motion.button
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            Contact Us
+          </motion.button>
+
+          <motion.button
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            Donate
+          </motion.button>
         </div>
       </div>
       <div className="imageContainer">
-        <Fade right>
-          <img src={`${process.env.PUBLIC_URL}/homeimg.jpeg`} alt="Example" />
-        </Fade>
+        <motion.img
+          src={`${process.env.PUBLIC_URL}/homeimg.jpeg`}
+          alt="Example"
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        />
       </div>
     </div>
   );
