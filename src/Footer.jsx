@@ -1,44 +1,37 @@
 import React from "react";
-import { BiDonateHeart } from "react-icons/bi";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import "./Footer.css"; // Assuming your styles are in Footer.css
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <>
-      <footer>
-        <div>
-          <span> &copy2024 Ikibeho Digital Foundation</span>
-          <span>IKIBEHO DIGITAL FOUNDATION</span>
-          <button>
-            <BiDonateHeart />
-            Donate Now
-          </button>
+    <footer className="footer">
+      <div className="footer-top">
+        <p>©2024 Ikibeho</p>
+        <h2>IKIBEHO DIGITAL FOUNDATION</h2>
+        <button className="purchase-btn">Donate</button>
+      </div>
+      <div className="footer-divider"></div>
+      <div className="footer-bottom">
+        <nav className="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div className="footer-social">
+          <FaFacebook />
+          <FaLinkedin />
+          <FaTwitter />
+          <FaYoutube />
+          <FaInstagram />
         </div>
-        <div>
-          <div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Stories</a>
-            <a href="#">Contacts</a>
-          </div>
-          <div>
-            <a href="#">
-              <FaFacebookF />
-            </a>
-            <a href="#">
-              <FaXTwitter />
-            </a>
-            <a href="#">
-              <FaInstagram />
-            </a>
-            <a href="#">
-              <FaWhatsapp />
-            </a>
-          </div>
-        </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 

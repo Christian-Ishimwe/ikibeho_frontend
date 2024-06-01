@@ -1,0 +1,33 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .8rem 3rem;
+    font-family: 'Roboto', sans-serif;
+    z-index: 70;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+nav  a{
+    text-decoration: none;
+    color: #37447E;
+    padding: .6rem 1rem;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+
+}
+nav  a.logo{
+    color: #37447E;
+    font-weight: 900;
+    font-size: 1.4em;
+}
+nav a.donate{
+    background-color: #37447E;
+    color: #fff;
+    border-radius: 5px;
+    padding: .6rem 3rem;
+}

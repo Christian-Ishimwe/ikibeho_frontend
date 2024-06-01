@@ -1,0 +1,38 @@
+.home_intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.home_content {
+  flex: 1;
+  padding-right: 20px; /* Add some spacing on the right */
+}
+
+.intro_text {
+  margin-bottom: 20px; /* Add spacing between paragraphs */
+}
+
+.cta_buttons {
+  margin-top: 20px; /* Add spacing above the buttons */
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

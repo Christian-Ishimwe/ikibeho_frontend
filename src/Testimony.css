@@ -1,0 +1,59 @@
+.home_testimonies {
+  text-align: center;
+  margin: 20px;
+}
+
+.home_testimonies h2 {
+    font-size: 20px;
+    color: #37447E;
+    font-weight: 800;
+    margin: 1rem 0;
+}
+
+.home_testimonies p {
+    font-size: 18px;
+    color: #000;
+    margin: 1rem auto;
+}
+
+.testimony {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.testimony p {
+  font-size: 1rem;
+}
+
+.testimony ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.testimony ul li {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  background-color: #45a049;
+}
