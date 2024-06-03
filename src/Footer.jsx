@@ -19,9 +19,9 @@ const Footer = () => {
       <div className="footer-divider"></div>
       <div className="footer-bottom">
         <nav className="footer-nav">
-          <a href="#home">Home</a>
+          <a href="/home">Home</a>
           <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
         </nav>
         <div className="footer-social">
           <FaFacebook />

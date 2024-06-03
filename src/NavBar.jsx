@@ -6,13 +6,13 @@ const NavBar=()=>{
         <>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About us</a></li>
                     <li><a href="#">Stories</a></li>
                 </ul>
                 <a href="#" className="logo">IKIBEHO DIGITAL FOUNDATION</a>
                 <ul>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="/contact">Contacts</a></li>
                     <li><a href="#" className="donate">Donate</a></li>
                 </ul>
             </nav>

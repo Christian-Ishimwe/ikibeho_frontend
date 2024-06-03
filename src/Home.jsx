@@ -1,16 +1,13 @@
 import React from "react";
-import NavBar from "./NavBar";
 import HomeIntro from "./HomeIntro";
 import { FaVideo, FaPhotoVideo } from "react-icons/fa";
 import { MdPark } from "react-icons/md";
-import Footer from "./Footer";
 import TestimonySection from "./TestimonySection";
 import "./Home.css"
 import "typeface-roboto"
 const Home = () => {
   return (
     <>
-      <NavBar />
       <div className="home_container">
         <HomeIntro />
         <div className="home_impact">
@@ -71,7 +68,6 @@ const Home = () => {
           </div>
         </div>
        <TestimonySection/>
-        <Footer />
       </div>
     </>
   );

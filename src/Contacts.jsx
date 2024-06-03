@@ -1,43 +1,63 @@
 import React from "react";
-import "./ContactUs.css"; // Assuming your styles are in ContactUs.css
+import "./Contacts.css"; // Assuming your styles are in ContactUs.css
+import "typeface-roboto"
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlinePhoneInTalk, MdEmail } from "react-icons/md";
 
-const ContactUs = () => {
+const Contacts = () => {
   return (
-    <div className="contact-us">
-      <h2>Contact Us</h2>
-      <p>
-        At Ikibeho Digital Foundation, we value your feedback and inquiries.
-        Please use the form below to get in touch with us.
-      </p>
-      <div className="contact-details">
-        <div className="contact-form">
-          <form>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Submit</button>
-          </form>
+    <div id="contacts">
+      <div className="contacts_intro">
+        <h3>Contact us</h3>
+        <img src={`${process.env.PUBLIC_URL}/homeimg.jpeg`} alt="Contacts" />
+      </div>
+      <div className="contacts_content">
+        <div className="contacts_address">
+          <div className="contact_item">
+            <CiLocationOn className="contact_icon" />
+            <h3>Our Address</h3>
+            <p>Muyumbu, Rwamagana District ,Eastern</p>
+          </div>
+          <div className="contact_item">
+            <MdOutlinePhoneInTalk className="contact_icon" />
+            <h3>Phone Number</h3>
+            <p>+250 783 475 088</p>
+          </div>
+          <div className="contact_item">
+            <MdEmail className="contact_icon" />
+            <h3>Email Address</h3>
+            <p>info@ikibefoundation.org.rw</p>
+          </div>
         </div>
-        <div className="contact-info">
-          <h3>Our Address</h3>
-          <p>Ikibeho Digital Foundation</p>
-          <p>1234 NGO Street</p>
-          <p>Kigali, Rwanda</p>
-          <p>Email: info@ikibeho.org</p>
-          <p>Phone: +250 123 456 789</p>
-          <div className="map">
+        <div className="contacts_form">
+          <div className="contacts_map">
             <iframe
-              title="Ikibeho Digital Foundation Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0642452408585!2d4.353510515746839!3d50.84669767953209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c380f6e0b15d%3A0x6820c2d53d2e7d0d!2sGrand%20Place!5e0!3m2!1sen!2sbe!4v1628522931317!5m2!1sen!2sbe"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen=""
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7389.133774708667!2d30.24210101038168!3d-1.96058828561095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srw!4v1717398585772!5m2!1sen!2srw"
+              allowfullscreen=""
               loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+          </div>
+          <div className="contacts">
+            <h3>contact us</h3>
+            <h2>
+              Get in <strong>Touch</strong>
+            </h2>
+            <form action="#">
+              <div className="input_field">
+                <label htmlFor="name">Name</label>
+                <input type="text" name="name" />
+              </div>
+              <div className="input_field">
+                <label htmlFor="email">Email</label>
+                <input type="email" name="email" />
+              </div>
+              <div className="input_field">
+                <label htmlFor="message">Comment or Message</label>
+                <textarea name="message"></textarea>
+              </div>
+              <button>submit</button>
+            </form>
           </div>
         </div>
       </div>
@@ -45,4 +65,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contacts;

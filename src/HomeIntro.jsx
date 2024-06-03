@@ -1,8 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./HomeIntro.css"; // Import CSS file for styling
+import { useNavigate } from "react-router-dom";
 
 const HomeIntro = () => {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+      navigate("/contact");
+    };
   return (
     <div className="home_intro">
       <div className="home_content">
@@ -40,6 +47,8 @@ const HomeIntro = () => {
 
         <div className="cta_buttons">
           <motion.button
+            type="button"
+            onClick={handleClick}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
