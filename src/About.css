@@ -1,21 +1,85 @@
-.about {
-  padding: 20px;
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+*{
+  font-family: "Roboto", sans-serif;
+}
+div.about_intro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30vh;
+  align-items: center;
+}
+div.about_intro::before{
+  content: "";
+  background-color: hsla(200, 100%, 50%, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+}
+div.about_intro img{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+div.about_intro  h3{
+  font-size: 30px;
+  margin-left: 2rem;
+  color: #fff;
+  z-index: 1;
 }
 
-.about h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+div.about_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 3rem 4rem;
+    justify-content: center;
 }
 
-.about p {
-  font-size: 18px;
-  margin-bottom: 20px;
+div.about_content h2{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-weight: 700;
 }
 
-.about button {
-  margin-top: 20px;
+div.about_content p{
+    color: #114;
+    font-size: 20px;
+    line-height: 1.5;
+}
+div.about_missions{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+div.about_item{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    font-size: 18px;
+}
+.about_icon{
+    font-size: 30px;
+    color: hsla(200, 100%, 50%, 0.75);
+}
+.about_item span{
+    color: #666;
+}
+
+div.about_history{
+    padding: 3rem 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-style: italic;
+    color: #fff;
+    background-color: hsla(200, 100%, 50%, 0.75);
+}
+
+div.about_history h2{
+    text-align: center;
+    font-size: 30px;
+}
+div.about_history p{
+    line-height: 2;
+
+    font-size: 20px;
 }

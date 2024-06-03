@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -20,7 +21,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <nav className="footer-nav">
           <a href="/home">Home</a>
-          <a href="#about">About</a>
+          <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
         <div className="footer-social">
