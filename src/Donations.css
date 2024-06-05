@@ -1,0 +1,67 @@
+#donateBtn{
+    background-color: var(--second-color--);
+    padding: .6rem 2rem;
+}
+
+/* Donations section */
+div#donations{
+    background-color: var(--white--color--);
+    padding: 2rem 10rem;
+  
+}
+div#donations div.donation__intro{
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+div.donation__intro h2{
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+div.donation__intro p{
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+div.donation__intro  button{
+    background-color: var(--second-color--);
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+ div.donation__options{
+    padding: 3rem 10rem;
+ }
+
+div.donation_options_container{
+    background-color: var(--white--color--);
+    padding: 2rem 4rem;
+    border-radius: 5px;
+}
+div.donation_options_container h2{
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+
+}
+div.donation__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+div.donation__items h4{
+    margin-bottom: 1rem;
+}
+div.donation__items button{
+    background-color: var(--second-color--);
+    border: none;
+    padding: .6rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
