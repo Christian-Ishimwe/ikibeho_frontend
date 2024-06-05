@@ -5,6 +5,7 @@ import Contacts from './Contacts'; // Your Contact Us component
 import Footer from './Footer'; // Your Footer component
 import NavBar from './NavBar';
 import About from './About';
+import Donations from './Donations';
 const App = () => {
   return (
 
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contacts />} />
           <Route path='/about' element={<About/>}/>
+          <Route path='/donate' element={<Donations/>}/>
         </Routes>
 
         <Footer />
