@@ -65,3 +65,28 @@ div.donation__items button{
     font-size: 1.2rem;
     margin-top: 1rem;
 }
+
+
+
+@media (max-width: 1000px) {
+  div#donations{
+        padding: 1rem .8rem;
+  }
+  div#donations div.donation__intro{
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+  div.donation__intro h2{
+    font-size: 20px;
+  }
+  div.donation__options{
+    padding: 1rem 0;
+  }
+   div.donation_options_container{
+    padding: .8rem 1rem;
+   }
+   div.donation__items{
+    grid-template-columns: auto;
+   }
+ 
+}
