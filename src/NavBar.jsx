@@ -8,7 +8,7 @@ const NavBar=()=>{
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About us</a></li>
-                    <li><a href="#">Stories</a></li>
+                    {/* <li><a href="#">Stories</a></li> */}
                 </ul>
                 <a href="#" className="logo">IKIBEHO DIGITAL FOUNDATION</a>
                 <ul>
