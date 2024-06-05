@@ -13,7 +13,7 @@ const NavBar=()=>{
                 <a href="#" className="logo">IKIBEHO DIGITAL FOUNDATION</a>
                 <ul>
                     <li><a href="/contact">Contacts</a></li>
-                    <li><a href="#" className="donate">Donate</a></li>
+                    <li><a href="/donate" className="donate">Donate</a></li>
                 </ul>
             </nav>
         </>
