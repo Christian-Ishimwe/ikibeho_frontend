@@ -4,9 +4,7 @@ import "./HomeIntro.css"; // Import CSS file for styling
 import { useNavigate } from "react-router-dom";
 
 const HomeIntro = () => {
-
     const navigate = useNavigate();
-
     const handleClick = () => {
       navigate("/contact");
     };

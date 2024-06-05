@@ -5,6 +5,8 @@ nav{
     padding: .8rem 3rem;
     font-family: 'Roboto', sans-serif;
     z-index: 70;
+    flex-wrap: wrap;
+    background-color: #fff;
 }
 nav ul{
     list-style: none;
@@ -31,3 +33,9 @@ nav a.donate{
     border-radius: 5px;
     padding: .6rem 3rem;
 }
+
+@media screen and (max-width:1000px) {
+  nav{
+    gap: 1rem;
+  }
+}  

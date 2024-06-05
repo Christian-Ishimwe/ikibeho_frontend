@@ -59,6 +59,7 @@ div.contact_item{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 5px;
   padding: 3rem 0;
+  flex-wrap: wrap;
 }
 div.contact_item p{
   color: #aaa;
@@ -126,4 +127,29 @@ div.contacts button{
 }
 div.contacts button:hover{
   opacity: .9;
+}
+
+@media (max-width: 768px) {
+  div.contacts_address{
+    grid-template-columns: 1fr;
+  }
+  div.contacts_content{
+    padding: .8rem .7rem;
+
+  }
+
+  div.contact_item{
+    padding: 2rem .8rem;
+    width: 100%;
+    grid: 1;
+  }
+  div.contacts_form{
+    grid-template-columns: 1fr;
+  }
+  div.contacts{
+    order: -1;
+  }
+  div.contacts input,div.contacts textarea {
+    width: 100%;
+  }
 }

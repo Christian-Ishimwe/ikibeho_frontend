@@ -118,7 +118,27 @@ div.ap_item  .icon{
     transform: translateY(0);
   }
 }
+@media screen and (max-width:1000px) {
+  div.home_approach{
+    padding: 1rem 0.7rem;
+    font-size: 18px;
+  }
 
+  div.ap_item{
+    grid-template-columns: auto;
+    padding: .6rem .8rem;
+  }
+  div.home_impact{
+    grid-template-columns: auto;
+    padding: .6rem .8rem;
+    gap: 1rem;
+  }
+
+   div.home_impact img{
+    border-radius: 5px;
+    width: 100%;
+   }
+}
 
 
 

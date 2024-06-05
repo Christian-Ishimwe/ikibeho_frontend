@@ -83,3 +83,12 @@ div.about_history p{
 
     font-size: 20px;
 }
+@media (max-width: 768px) {
+  div.about_content{
+    grid-template-columns: auto;
+    padding: 1rem .8rem;
+  }
+  div.about_history{
+    padding: 1.5rem .8rem;
+  }
+}
