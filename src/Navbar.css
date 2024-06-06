@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -8,34 +8,65 @@ nav{
     flex-wrap: wrap;
     background-color: #fff;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
 }
-nav  a{
+
+nav a {
     text-decoration: none;
     color: #37447E;
     padding: .6rem 1rem;
     font-size: 1.2em;
     display: flex;
     justify-content: center;
-
 }
-nav  a.logo{
+
+nav a.logo {
     color: #37447E;
     font-weight: 900;
     font-size: 1.4em;
+    white-space: nowrap;
 }
-nav a.donate{
+
+nav a.donate {
     background-color: #37447E;
     color: #fff;
     border-radius: 5px;
     padding: .6rem 3rem;
 }
 
-@media screen and (max-width:1000px) {
-  nav{
-    gap: 1rem;
-  }
-}  
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-icon {
+        display: inline-block;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        max-height: 500px; /* Adjust based on the content */
+    }
+
+    nav ul {
+        gap: 1rem;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
