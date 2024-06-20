@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
 
 const VisitModal = () => {
+    const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,6 +50,7 @@ const VisitModal = () => {
       }
 
       const data = await response.json();
+      navigate("/thank-you");
       console.log("Success:", data);
     } catch (error) {
       console.error("Error:", error);

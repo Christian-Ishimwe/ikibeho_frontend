@@ -1,10 +1,11 @@
 import "./Donations.css";
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
-import DonationModal from "./DonationModel";
-import VisitModal from "./VisitModel";
-import VolunteerModal from "./VolunteerModel";
+import DonationModal from "./DonationModal"; // Corrected the file name import
+import VisitModal from "./VisitModal";
+import VolunteerModal from "./VolunteerModal"; // Corrected the file name import
+
 const Donations = () => {
   return (
     <>
@@ -16,9 +17,11 @@ const Donations = () => {
               Make a difference with your contribution. Every donation helps us
               continue our mission.
             </p>
-            <button id="donateButton">
-              <i className="ri-arrow-down-line"></i> Donate Now
-            </button>
+            <a href="#donateopt" className="text-decoration-none text-light">
+              <button id="donateButton" className="btn btn-primary">
+                <i className="ri-arrow-down-line"></i> Donate Now
+              </button>
+            </a>
           </div>
           <div className="donation__icon">
             <svg
@@ -34,7 +37,7 @@ const Donations = () => {
         </div>
       </div>
 
-      <div className="donation__options">
+      <div className="donation__options" id="donateopt">
         <div className="donation_options_container">
           <h2>Donation Options</h2>
           <div className="donation__items">

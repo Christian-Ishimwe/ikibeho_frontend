@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { useNavigate } from "react-router-dom";
 const DonationModal = () => {
+  const navigate = useNavigate();
+
   const [amount, setAmount] = useState(100);
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -28,7 +30,7 @@ const DonationModal = () => {
       })
       .then((data) => {
         console.log(data);
-        alert("Your donation have been submitted, we will reach to you!");
+        navigate("/thank-you")
       })
       .catch((err) => {
         console.log(err);
