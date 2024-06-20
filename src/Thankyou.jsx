@@ -12,7 +12,9 @@ const ThankYou = () => {
       <img
         src={`${process.env.PUBLIC_URL}/homeimg.jpeg`}
         alt="Thank You"
-        className="rounded"
+        className="rounded-circle my-3"
+        width={400}
+        height={400}
       />
     </div>
   );
