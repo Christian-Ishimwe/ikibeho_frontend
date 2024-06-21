@@ -38,7 +38,7 @@ const Home = () => {
           <div className="ap_item">
             <div>
               <FaVideo className="icon" />
-              <h3>Videograph</h3>
+              <h3>Videograph and Film making</h3>
               <p>
                 Our videography training covers the entire production process,
                 from scriptwriting and filming to editing and post-production.
@@ -48,11 +48,12 @@ const Home = () => {
             </div>
             <div>
               <FaPhotoVideo className="icon" />
-              <h3>Photography</h3>
+              <h3>Digital Public Services</h3>
               <p>
-                We teach young mothers everything from basic camera operations
-                to advanced photography techniques. Our comprehensive curriculum
-                includes workshops on composition, lighting, editing, and more.{" "}
+                Ikibeho empowers teen mothers by teaching them digital public
+                service skills, fostering self-sufficiency and brighter futures.
+                Through targeted education and support, they bridge the digital
+                divide for young mothers.{" "}
               </p>
             </div>
             <div>
@@ -67,7 +68,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-       <TestimonySection/>
+        <TestimonySection />
       </div>
     </>
   );
