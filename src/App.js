@@ -7,6 +7,8 @@ import NavBar from './NavBar';
 import About from './About';
 import Donations from './Donations';
 import ThankYou from './Thankyou';
+import Blogs from './Pages/Blogs';
+import SingleBlog from './Pages/singleBlog';
 import './App.css'; // Adjust the path if necessary
 
 const App = () => {
@@ -21,6 +23,9 @@ const App = () => {
             <Route path="/contact" element={<Contacts />} />
             <Route path="/about" element={<About />} />
             <Route path="/donate" element={<Donations />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:id" element={<SingleBlog/>} />
+
             <Route path="/thank-you" element={<ThankYou />} />
           </Routes>
         </div>
