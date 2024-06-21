@@ -2,12 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./HomeIntro.css"; // Import CSS file for styling
 import { useNavigate } from "react-router-dom";
-
+import "./Pages/blogs.css"
 const HomeIntro = () => {
     const navigate = useNavigate();
     const handleClick = () => {
       navigate("/contact");
     };
+    const handleClickDonate=()=>{
+      navigate("/donate")
+    }
   return (
     <div className="home_intro">
       <div className="home_content">
@@ -39,8 +42,9 @@ const HomeIntro = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <strong>Our mission</strong> is to provide comprehensive support that
-          empowers these young women through videography and film making production. Digital Public services and
-          tourism to overcome obstacles and thrive.
+          empowers these young women through videography and film making
+          production. Digital Public services and tourism to overcome obstacles
+          and thrive.
         </motion.p>
 
         <div className="cta_buttons">
@@ -49,14 +53,17 @@ const HomeIntro = () => {
             onClick={handleClick}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
+            className="mx-1 rounded-md"
             transition={{ duration: 0.6, delay: 0.6 }}
-          >
+          > 
             Contact Us
           </motion.button>
 
           <motion.button
+            onClick={handleClickDonate}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
+            className="rounded-md"
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             Donate

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contacts.css"; // Assuming your styles are in ContactUs.css
 import "typeface-roboto";
+import "./Pages/blogs.css"
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlinePhoneInTalk, MdEmail } from "react-icons/md";
 
@@ -107,8 +108,19 @@ const Contacts = () => {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
-              {isPending && <button disabled>Sending message...</button>}
-              {!isPending && <button>Submit</button>}
+              {isPending && (
+                <button
+                  disabled
+                  className="bg-gray-300 text-gray-600 py-2 px-4 rounded cursor-not-allowed"
+                >
+                  Sending message...
+                </button>
+              )}
+              {!isPending && (
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  Submit
+                </button>
+              )}
             </form>
           </div>
         </div>

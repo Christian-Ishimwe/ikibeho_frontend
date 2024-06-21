@@ -18,7 +18,7 @@ const Donations = () => {
               continue our mission.
             </p>
             <a href="#donateopt" className="text-decoration-none text-light">
-              <button id="donateButton" className="btn btn-primary">
+              <button id="donateButton" className="btn btn-primary ">
                 <i className="ri-arrow-down-line"></i> Donate Now
               </button>
             </a>
@@ -76,6 +76,7 @@ const Donations = () => {
                 type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#visitModal"
+                className="btn btn-primary"
               >
                 Book
               </button>

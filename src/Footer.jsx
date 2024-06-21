@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Footer.css"; // Assuming your styles are in Footer.css
 import {
   FaFacebook,
@@ -9,13 +10,16 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-
+  const navigate= useNavigate()
+  const handleClick=()=>{
+    navigate("/donate")
+  }
   return (
     <footer className="footer">
       <div className="footer-top">
         <p>©2024 Ikibeho</p>
         <h2>IKIBEHO DIGITAL FOUNDATION</h2>
-        <button className="purchase-btn">Donate</button>
+        <button className="purchase-btn" onClick={handleClick}>Donate</button>
       </div>
       <div className="footer-divider"></div>
       <div className="footer-bottom">

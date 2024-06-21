@@ -57,10 +57,14 @@ div.donation__items{
 div.donation__items h4{
     margin-bottom: 1rem;
 }
+div.donation__items a{
+    color: #fff;
+}
 div.donation__items button{
     background-color: #37447E;
     border: none;
     padding: .6rem 2rem;
+    color: #fff;
     border-radius: 5px;
     font-size: 1.2rem;
     margin-top: 1rem;
