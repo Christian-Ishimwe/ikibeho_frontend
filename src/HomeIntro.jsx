@@ -39,7 +39,7 @@ const HomeIntro = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <strong>Our mission</strong> is to provide comprehensive support that
-          empowers these young women through photography, videography, and
+          empowers these young women through videography and film making production. Digital Public services and
           tourism to overcome obstacles and thrive.
         </motion.p>
 
