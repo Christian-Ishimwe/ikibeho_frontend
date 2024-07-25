@@ -58,13 +58,13 @@ const Home = () => {
             </div>
             <div>
               <MdPark className="icon" />
-              <h3>Tourism</h3>
-              <p>
-                We provide in-depth training on Rwanda's rich cultural and
-                natural heritage. Our courses prepare young mothers for careers
-                in the tourism industry, including roles as tour guides, travel
-                consultants, and hospitality managers.{" "}
-              </p>
+              <h3>Tourism & Tea Value Chain Development</h3>
+<p>
+  We provide in-depth training on Rwanda's cultural and natural heritage.
+  Our courses prepare young mothers for careers in tourism, including roles as
+  tour guides, travel consultants, hospitality managers, and in the tea industry.
+</p>
+
             </div>
           </div>
         </div>
